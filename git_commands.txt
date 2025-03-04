@@ -4,3 +4,4 @@ git push myrepos - 'пуш'
 git checkout -b 'branch name' - сделать отдельную ветку
 git pull - стянуть изменения с мастера
 git remote add myrepos $ssh - добавить удаленный репозиторий для пуша
+git clone ssh - сделать клон с реп
