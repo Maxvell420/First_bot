@@ -1,4 +1,4 @@
-start_date = "20-25-2025"
+start_date = "2025-12-31"
 
 
 class Date:
@@ -6,22 +6,9 @@ class Date:
         self.time: int = time
         self.dateTime: bool = self._is_date(time)
 
-    def _is_date(self, time: str):
-        return str.isdecimal(time)
+    
 
-    def setTime(self, time: int):
-        self.time = time
 
-    def getTime(self):
-        return self.time
-
-    # def validateStart_date(self, start_date):
-    #     if start_date == "not_valid":
-    # Exception
-
-    def getPassedDays(self):
-        # some cool code
-        return "Прошло 150 дней с начала года"
 
 
 # По ходу решения задачи ты будешь делать ветку с помощью команды git checkout -b изменять этот класс
