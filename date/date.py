@@ -48,13 +48,20 @@ class Date:
 
         for i in range(1, self.month):
             all_days += self.days_in_a_month(i)
+
+        all_days += self.days
  
         if self.year != 0:
             return f"Дней с нового года = {all_days}"
         else:
             return f"Данные введены не верно"
 
+class Date_to_date(Date):
+    def prov(self):
+        return f"вот: {self.days}"
 
 #date = Date(str(input("Введите дату в формате гггг-мм-дд: ")))
-date = Date("2024-05-01")
-print(date.days_passed_NY())
+#print(date.days_passed_NY())
+
+date_2 = Date_to_date("2025-03-01")
+print(date_2.days_passed_NY())
