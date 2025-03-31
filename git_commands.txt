@@ -7,3 +7,5 @@ git remote add myrepos $ssh - добавить удаленный репозит
 git clone ssh - сделать клон с реп
 git cherry-pick myrepos/ - слить изменения с ветки
 git branch -D - удалить ветку
+git log - посмотреть логи которые пушил
+git reset --hard (номер лога который нужен)
