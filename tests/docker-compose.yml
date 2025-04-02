@@ -1,0 +1,10 @@
+services:
+    app:
+        container_name: python
+        build:
+            context: ..
+            dockerfile: tests/.docker/python/DockerFile
+        volumes:
+        - ./:/app
+        ports:
+          - "8000:8000"
