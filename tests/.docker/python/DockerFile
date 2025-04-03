@@ -6,4 +6,4 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-
+RUN python3 /app/tests/import.py

@@ -5,6 +5,6 @@ services:
             context: ../
             dockerfile: tests/.docker/python/DockerFile
         volumes:
-        - ./:/python
+        - ../:/app
         ports:
           - "8000:8000"
