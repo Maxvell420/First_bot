@@ -1,11 +1,9 @@
-# Указываем базовый образ
 FROM python:3.10
 
-# Создаем рабочую директорию внутри контейнера
 WORKDIR /app
 
-COPY /app .
+COPY . .
 
-# Устанавливаем зависимости (если есть)
-# RUN pip install -r requirements.txt
+RUN pip install -r requirements.txt
+
 
