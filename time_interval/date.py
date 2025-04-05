@@ -5,7 +5,6 @@ class Date:
         self.days = days
         self.month = month
         self.year = year
-        # вычислить тек день из 0 точки и добавить свойство
 
     def _parse_date(self, time: str) -> list[int]:
         try:
@@ -76,9 +75,8 @@ class Date:
     def out_days_from_the_new_year(self) -> str:  # для вывода кол. дней от нового года
         return f"Дней с нового года = {self._num_days_from_the_new_year(days= self.days, month= self.month, year= self.year)}"
 
-    # вызывать в init
-
-    def days_passed_zero_point(self, zero_point: int) -> int:
+    def days_passed_zero_point(self) -> int:
+        zero_point = 0
         all_days = 0
         all_days += self._num_days_from_the_new_year(self.days, self.month, self.year)
         for i in range(zero_point, self.year):
