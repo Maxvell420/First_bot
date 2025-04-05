@@ -1,0 +1,5 @@
+setup.py
+time_interval.egg-info/PKG-INFO
+time_interval.egg-info/SOURCES.txt
+time_interval.egg-info/dependency_links.txt
+time_interval.egg-info/top_level.txt
